@@ -340,12 +340,12 @@ while True:
         inter[0] = align_vector(inter[0], planarOffset)
         inter[1] = align_vector(inter[1], planarOffset)
 
-        #Convert lines to pixels
+        """#Convert lines to pixels
         linepix = ski.draw.line(int(inter[0][0]), int(inter[0][1]), int(inter[1][0]), int(inter[1][1]))
         for linexpix in linepix[0]:
             xpix.append(linexpix)
         for lineypix in linepix[1]:
-            ypix.append(lineypix)
+            ypix.append(lineypix)"""
 
     
     #plt.scatter(xpix, ypix)
