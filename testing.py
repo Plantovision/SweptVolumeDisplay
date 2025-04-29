@@ -4,6 +4,7 @@ import re
 import skimage as ski
 import os
 import sys
+import platform
 
 """def bresenham(x0: int, y0: int, x1: int, y1: int):
     
@@ -274,7 +275,10 @@ p_co = [0, 0, 0]
 p_no = [0, 0, 1]
 print ("planar angles are: " + str(dir_to_euler(p_no)))
 
-filepath = os.path.dirname(os.path.abspath(sys.argv[0]))  + r"\test.obj"
+if platform.system() == "Linux":
+    filepath = os.path.dirname(os.path.abspath(sys.argv[0]))  + r"test.obj"
+else:
+    filepath = os.path.dirname(os.path.abspath(sys.argv[0]))  + r"\test.obj"
 intersection: list = []
 with open(filepath,'r') as fin:
     lines = fin.readlines()
