@@ -1,7 +1,6 @@
 import numpy as np
 import time
 import re
-import matplotlib.pyplot as plt
 import skimage as ski
 
 """def bresenham(x0: int, y0: int, x1: int, y1: int):
@@ -363,8 +362,8 @@ while True:
 #for point in :
 #    xpix.append(point[0])
 #    ypix.append(point[1])
-plt.scatter(xpix, ypix)
-plt.ylabel('some numbers')
-plt.show()
+#plt.scatter(xpix, ypix)
+#plt.ylabel('some numbers')
+#plt.show()
 
 
