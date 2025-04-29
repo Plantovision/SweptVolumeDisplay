@@ -321,7 +321,8 @@ print("\n FACES:")
 
 #else:
 #    print(False)
-while True:
+iters: int = 0
+while iters < 500:
     start_time = time.time_ns()
     #SLICING
     slices = []
@@ -358,7 +359,7 @@ while True:
     if p_no[2] < 0.001 and p_no[2] > -0.001 :
         p_no[2] = 0
 
-
+    iters += 1
     print("--- %s seconds ---" % (time.time_ns() - start_time))
 
 
