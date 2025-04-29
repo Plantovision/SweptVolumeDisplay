@@ -276,7 +276,7 @@ p_no = [0, 0, 1]
 print ("planar angles are: " + str(dir_to_euler(p_no)))
 
 if platform.system() == "Linux":
-    filepath = os.path.dirname(os.path.abspath(sys.argv[0]))  + r"test.obj"
+    filepath = os.path.dirname(os.path.abspath(sys.argv[0]))  + r"/test.obj"
 else:
     filepath = os.path.dirname(os.path.abspath(sys.argv[0]))  + r"\test.obj"
 intersection: list = []
